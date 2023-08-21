@@ -15,10 +15,18 @@
 # in the templates via {{ site.myvariable }}.
 title: "Sanda's Person Website"
 email: 'sandathura2001@gmail.com'
-description: "Hi there! My name is Sanda Thura and I am a graduate of James Madison University in the beautiful Shenandoah Valley of Virginia. Originally from Myanmar (Burma), I studied computer science with a minor in Honor Interdisciplinary studies and graduated with honors distinctions. I am proud to have been awarded the Grace Murray Hopper award for my contributions to the field of computer science. My research interests include machine learning and artificial intelligence. I have completed research projects using machine learning to diagnose coronary heart diseases on wearable devices, modeling and analyzing Sars-Cov-2 proteins using computational biology. I have interned as a data scientist and visualization specialist at Merck and Co., and have also served as a Computer Science Lead Teaching Assistant, Computer Science Ambassador, and International Ambassador (Linker). Currently, I am working as a data scientist and software developer at Merck. Welcome to my personal website!"
+description: "Welcome! I'm Sanda Thura, a proud graduate of James Madison University nestled in Virginia's picturesque Shenandoah Valley. Originally hailing from Myanmar (Burma), I hold a degree in Computer Science with a minor in Honor Interdisciplinary Studies, and graduated with honors distinctions.I'm honored to have received the Grace Murray Hopper award for my contributions to computer science. My research interests lie in the exciting fields of machine learning and artificial intelligence. I've undertaken research projects that leverage machine learning to diagnose coronary heart diseases via wearable devices, and have modeled and analyzed Sars-Cov-2 proteins using computational biology. My professional journey includes an internship as a Data Scientist and Visualization Specialist at Merck and Co., where I currently work as a data scientist and software developer. I've also served as a Computer Science Lead Teaching Assistant, Computer Science Ambassador, and International Ambassador (Linker). Enjoy exploring my personal website!"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://Orion1071.github.io/phantom" # the base hostname & protocol for your site, e.g. https://example.com
+url: "https://Orion1071.github.io/" # the base hostname & protocol for your site, e.g. https://example.com
+twitter_username: ''
+medium_username: ''
 github_username: 'Orion1071'
+instagram_username: 'sanda_st_'
+timezone: 'America/New_York'
+
+#author information
+author_picture: "/img/profile_pic.jpeg"
+author_picture_small: "/img/profile_pic_small.jpg"
 
 # Build settings
 markdown: kramdown
@@ -52,7 +60,7 @@ pagination:
   title: ':title - page :num'
 
   # Limit how many pagenated pages to create (default: 0, means all)
-  limit: 0
+  limit: 2
   
   # Optional, defines the field that the posts should be sorted on (omit to default to 'date')
   sort_field: 'date'
@@ -97,3 +105,4 @@ enable_nav: true
 nav_item:
   - { url: '/', text: 'Home' }
   - { url: '/about', text: 'About' }
+  - { url: '/photos', text: 'Photos'}

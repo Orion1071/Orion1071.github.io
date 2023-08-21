@@ -16,7 +16,21 @@
           <p class="text-center">
             {% if site.description != '' %}
             {{site.description}}
+            
             {% endif %}
+
+
+
+            <!-- check if the author_image exists -->
+            {% assign file_exists = false %}
+            {% for static_file in site.static_files %}
+              {% if static_file.path == 'web_dev/Orion1071.github.io/img/profile_pic.jpeg' %}
+                {% assign file_exists = true %}
+              {% endif %}
+            {% endfor %}
+
+            
+
 
             {% if site.enable_contact == true %}
             {% include contact.html %}
@@ -25,17 +39,44 @@
           </p>
           {% endif %}
 
+
+          <!-- add author image -->
+          {% if site.author_picture != '' %}
+              <!-- Your HTML when the file exists -->
+              <!-- <div style="display: flex; align-items: center; justify-content: center;">
+                <img src="{{ site.author_picture }}" style="width: 250px; height: 300px;" alt="Sanda Thura">
+              </div> -->
+
+              <!-- <div style="display: flex; align-items: center; justify-content: center;">
+                <img src="{{ site.author_picture }}" style="width: auto; height: auto;" alt="Sanda Thura">
+              </div> -->
+              <div style="display: flex; align-items: center; justify-content: center;">
+              <a href="{{ site.author_picture }}" target="_blank" style="align-items: center; justify-content: center;"id="modal"><img src="{{ site.author_picture_small }}" style="justify-content: center;width: auto; height: auto; align-items: center;" alt="Image"> <a href="#" class="close">Close</a></a>
+              <!-- <a href="{{ site.author_picture }}"><img src="{{ site.author_picture }}" alt="Image"></a> -->
+              </div>
+
+
+
+              <!-- <img src="{{ site.author_picture }}" alt="Author's Picture"> -->
+            {% endif %}
+
+
+
           <div class="hero-buttons">
 
             {% if site.twitter_username != '' %}
-              <a href="https://twitter.com/{{ site.twitter_username }}"><button class="btn btn-default btn-lg"><i class="fa fa-twitter fa-lg"></i>Twitter</button></a>
+              <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank"><button class="btn btn-default btn-lg"><i class="fa fa-twitter fa-lg"></i>Twitter</button></a>
             {% endif %}
+            {% if site.instagram_username != '' %}
+              <a href="https://instagram.com/{{ site.instagram_username }}" target="_blank"><button class="btn btn-default btn-lg"><i class="fa fa-instagram fa-lg"></i>Instagram</button></a>
+            {% endif%}
             {% if site.github_username != '' %}
-              <a href="https://github.com/{{ site.github_username }}"><button class="btn btn-default btn-lg"><i class="fa fa-github fa-lg"></i>Github</button></a>
+              <a href="https://github.com/{{ site.github_username }}" target="_blank"><button class="btn btn-default btn-lg"><i class="fa fa-github fa-lg"></i>Github</button></a>
             {% endif %}
             {% if site.medium_username != '' %}
-              <a href="https://{{ site.medium_username }}"><button class="btn btn-default btn-lg"><i class="fa fa-medium fa-lg"></i>Medium</button></a>
+              <a href="https://{{ site.medium_username }}" target="_blank"><button class="btn btn-default btn-lg"><i class="fa fa-medium fa-lg"></i>Medium</button></a>
             {% endif %}
+            
 
           </div>
 

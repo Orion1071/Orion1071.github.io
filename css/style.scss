@@ -53,7 +53,7 @@ p {
 }
 
 a {
-  @include transition(color .2s ease-in-out);
+  @include transition(color .8s ease-in-out);
   &:hover {
     color: #FF5B33;
     text-decoration: none;
@@ -435,3 +435,14 @@ pre {
     .highlight .vg { color: #000000 } /* Name.Variable.Global */
     .highlight .vi { color: #000000 } /* Name.Variable.Instance */
     .highlight .il { color: #0000cf; font-weight: bold } /* Literal.Number.Integer.Long */
+
+
+/* Style the close button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  font-size: 32px;
+  text-decoration: none;
+}
