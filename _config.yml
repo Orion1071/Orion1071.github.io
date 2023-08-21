@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "Sanda's Person Website"
+title: "Sanda's Personal Website"
 email: 'sandathura2001@gmail.com'
 description: "Welcome! I'm Sanda Thura, a proud graduate of James Madison University nestled in Virginia's picturesque Shenandoah Valley. Originally hailing from Myanmar (Burma), I hold a degree in Computer Science with a minor in Honor Interdisciplinary Studies, and graduated with honors distinctions.I'm honored to have received the Grace Murray Hopper award for my contributions to computer science. My research interests lie in the exciting fields of machine learning and artificial intelligence. I've undertaken research projects that leverage machine learning to diagnose coronary heart diseases via wearable devices, and have modeled and analyzed Sars-Cov-2 proteins using computational biology. My professional journey includes an internship as a Data Scientist and Visualization Specialist at Merck and Co., where I currently work as a data scientist and software developer. I've also served as a Computer Science Lead Teaching Assistant, Computer Science Ambassador, and International Ambassador (Linker). Enjoy exploring my personal website!"
 baseurl: "" # the subpath of your site, e.g. /blog
